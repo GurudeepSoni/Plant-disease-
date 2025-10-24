@@ -13,7 +13,74 @@ This project leverages machine learning to identify plant diseases from leaf ima
 🌐 Streamlit web portal for fast and interactive predictions
 
 📊 Confidence scores for predictions
+# 🌿 Plant Disease Identification Using Machine Learning
 
+A **web-based machine learning application** that detects plant diseases from leaf images using a **Streamlit-powered user interface**.
+
+🔗 **Live App:** [🌱 Try it on Streamlit Cloud](https://gd-app-plant-disease-detection.streamlit.app/)
+
+---
+
+## 🧠 Project Overview
+
+This project leverages **deep learning** to identify plant diseases from leaf images.  
+Users can upload a photo of a leaf, and the model predicts the **type of disease (if any)**.  
+
+The frontend is built using **Streamlit**, providing an easy-to-use interface for:
+- 👨‍🌾 Farmers  
+- 🌳 Gardeners  
+- 🧪 Researchers  
+
+---
+
+## 🔍 Features
+
+- 📸 Upload leaf images for automatic diagnosis  
+- 🧠 CNN-based deep learning model for classification  
+- 🌐 Streamlit web app for real-time predictions  
+- 📊 Displays prediction results instantly  
+- 🪄 Simple, elegant, and interactive UI  
+
+---
+
+## 🛠️ Installation
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/GurudeepSoni/Plant-disease-.git
+cd Plant-disease-
+2️⃣ Install dependencies
+bash
+Copy code
+pip install -r requirements.txt
+3️⃣ Run the Streamlit app
+bash
+Copy code
+streamlit run main.py
+(If your main file has a different name, replace main.py accordingly.)
+
+🧪 Model Info
+The model is trained on the PlantVillage dataset, containing over 50,000+ labeled images of healthy and diseased plant leaves.
+
+It uses a Convolutional Neural Network (CNN) built with TensorFlow/Keras.
+You can retrain or fine-tune the model using the included Jupyter notebook:
+
+bash
+Copy code
+train_model.ipynb
+🖼️ Example Output
+Input Image	Predicted Disease	Confidence
+🍅 Tomato Leaf	Tomato Late Blight	98.7%
+🍏 Apple Leaf	Healthy	95.1%
+
+✅ TODO
+🌎 Add multilingual support
+
+☁️ Deploy on Streamlit Cloud or Hugging Face Spaces
+
+🔍 Integrate model explainability (Grad-CAM)
+
+💾 Add lightweight model for mobile devices
 
 🛠️ Installation
 Clone the repo:
