@@ -5,7 +5,7 @@ from PIL import Image
 
 # --- Page Configuration ---
 st.set_page_config(
-    page_title="🌿 Plant Disease Detector",
+    page_title="🌿 Plant Disease Detection",
     page_icon="🌱",
     layout="centered",
     initial_sidebar_state="expanded"
@@ -29,12 +29,12 @@ app_mode = st.sidebar.radio("📍 Select Page", ["🏠 Home", "🧬 Disease Reco
 if app_mode == "🏠 Home":
     st.markdown(
         """
-        <h1 style='text-align: center; color: #2E8B57;'>🌿 Plant Disease Detection System</h1>
+        <h1 style='text-align: center; color: #2E8B57;'>🌿 Plant Disease Detection</h1>
         <h3 style='text-align: center; color: #4CAF50;'>for Sustainable Agriculture 🌱</h3>
         """,
         unsafe_allow_html=True
     )
-    st.image("Diseases.png", use_column_width=True, caption="Healthy vs Diseased Leaves")
+    st.image("Diseases.png", use_container_width=True, caption="Healthy vs Diseased Leaves")
 
     st.markdown(
         """
@@ -49,14 +49,14 @@ if app_mode == "🏠 Home":
 # --- Prediction Page ---
 elif app_mode == "🧬 Disease Recognition":
     st.markdown(
-        "<h2 style='color: #2E8B57;'>🔍 Detect Plant Disease</h2>",
+        "<h2 style='color: #2E8B57; text-align:center;'>🔍 Plant Disease Detection</h2>",
         unsafe_allow_html=True
     )
 
     test_image = st.file_uploader("📤 Choose an Image", type=["jpg", "jpeg", "png"])
 
     if test_image:
-        st.image(test_image, use_column_width=True, caption="Uploaded Image 🌿")
+        st.image(test_image, use_container_width=True, caption="Uploaded Image 🌿")
 
         if st.button("🚀 Predict"):
             with st.spinner("Analyzing the image... please wait ⏳"):
@@ -91,8 +91,17 @@ elif app_mode == "👨‍💻 About":
         to detect plant leaf diseases. It supports multiple crops like <b>Tomato, Apple, Corn, Potato</b>, and more! 🍅🍎🌽🥔
         </p>
         <hr>
-        <h4 style='text-align:center; color:#4CAF50;'>✨ Made with ❤️ by <b>Gurudeep Soni</b> ✨</h4>
-        <div style='text-align:center; font-size:24px;'>🌿💧☀️</div>
         """,
         unsafe_allow_html=True
     )
+
+# --- Footer (always visible) ---
+st.markdown(
+    """
+    <hr>
+    <div style='text-align: center; padding-top: 10px; color: gray; font-size: 16px;'>
+        🌿 Made with ❤️ by <b>Gurudeep Soni</b> | © 2025 Plant Disease Detection
+    </div>
+    """,
+    unsafe_allow_html=True
+)
