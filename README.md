@@ -21,7 +21,7 @@ Clone the repo:
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/plant-disease-identification.git
+git clone (https://github.com/GurudeepSoni/Plant-disease-/edit/main/README.md)
 cd plant-disease-identification
 Install dependencies:
 
@@ -60,7 +60,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 🙋‍♀️ Support
 If you like this project, give it a ⭐️!
-For questions, feel free to open an issue or reach out at [your-email@example.com].
+For questions, feel free to open an issue or reach out at [soni.gurudeep0408@gmail.com].
 
 Let me know if you want to include badges, images, a training section, or anything else!
 
